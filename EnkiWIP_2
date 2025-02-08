@@ -1,0 +1,51 @@
+##Got the first choice done! Re-learned how to use functions, particularly how to call global variables in and out of functions. Macgyvered a way to repeat 
+##a function as well. I should probably start putting some comments into this code.
+
+input("You were born with the soul of the enlightened. You are always seeking "
+    "restlessly for new knowledge and secrets hidden from the common folk.\n")
+input("This trait started to show itself at a very young age as you were chosen to "
+    "become a dark priest upon the birth of you and your twin sister.\n")
+input("Typical to such occult rites, you were pitted against your sibling with ritual "
+    "daggers and challenged to fight each other to the very last breath.\n")
+input("Unfortunate for you, you were born with a fragile body and your sister easily "
+    "overpowered you and had her dagger on your neck waiting for the final blow.\n")
+input("She however showed mercy and withdrew her dagger. She stepped away from you as "
+    "your high priest masters glared gleefully at the event unfolding before their very "
+    "eyes.\n")
+print("You...\n"
+    "...Strike your dagger to her spine while she walks away. [Press 1]\n"
+    "...Accept your defeat. [Press 2]")
+
+def repeat1():
+    choice1()
+
+x = "9"
+
+def choice1():
+    global x
+    x = input()
+    if x == "1":
+        input("You stroke your dagger to the spine of your sister and she collapsed to "
+            "the ground. The high priests seemed especially pleased with this and "
+            "prepared you for your ascension ceremony.\n")
+        input("In the ascension ceremony you were to resurrect your deceased sister with "
+            "necromancy and use her as a ghoul. You did this and the cold corpse of your "
+            "sister brought a smile to your otherwise emotionless face.\n")
+        input("After your ascension to dark priesthood, you were to leave the temple "
+            "grounds and learn occult on your own in your dark pilgrimage.\n")
+    elif x == "2":
+        input("The dark priests got no place for the weak, so you were thrown down to an "
+            "underground well. There you were meant to quietly wither away. Instead you "
+            "fed on insects and other small critters that shared your fate down in the "
+            "darkness.\n")
+        input("With time you learned to understand the language they spoke.\n")
+    else:
+        repeat1()
+    return x
+
+choice1()
+
+if x == "2":
+    input("With the aid of your new slaves, you eventually grew strong enough to "
+            "climb up the well. You creeped upstairs to the temple and noticed it was "
+            "the night time.\n")
