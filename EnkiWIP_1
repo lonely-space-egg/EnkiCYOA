@@ -1,0 +1,33 @@
+##Creating a "save point" as I mess around with loops for the first split path
+
+input("You were born with the soul of the enlightened. You are always seeking "
+    "restlessly for new knowledge and secrets hidden from the common folk.\n")
+input("This trait started to show itself at a very young age as you were chosen to "
+    "become a dark priest upon the birth of you and your twin sister.\n")
+input("Typical to such occult rites, you were pitted against your sibling with ritual "
+    "daggers and challenged to fight each other to the very last breath.\n")
+input("Unfortunate for you, you were born with a fragile body and your sister easily "
+    "overpowered you and had her dagger on your neck waiting for the final blow.\n")
+input("She however showed mercy and withdrew her dagger. She stepped away from you as "
+    "your high priest masters glared gleefully at the event unfolding before their very "
+    "eyes.\n")
+print("You...\n"
+    "...Strike your dagger to her spine while she walks away. [Press 1]\n"
+    "...Accept your defeat. [Press 2]")
+
+x = input()
+if x != "1" or "2":
+    input()
+    x = input()
+    
+if x == "1":
+    input("You stroke your dagger to the spine of your sister and she collapsed to the "
+        "ground. The high priests seemed especially pleased with this and prepared you "
+        "for your ascension ceremony.")
+if x == "2":
+    input("The dark priests got no place for the weak, so you were thrown down to an "
+        "underground well. There you were meant to quietly wither away. Instead you fed "
+        "on insects and other small critters that shared your fate down in the darkness.")
+else:
+    input("check")
+    
